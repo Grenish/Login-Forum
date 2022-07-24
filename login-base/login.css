@@ -8,7 +8,17 @@ body{
 }
 .LG-01{
     background-color: #f6f2e8;
-    width : 50%;
-    display : flexwrap;
+    width : 50vh;
+    height: 50vh;
+    position: absolute;
+    top : 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+
+}
+
+.input [type=text]{
+    justify-content: center;
+    display: flex;
     
 }
