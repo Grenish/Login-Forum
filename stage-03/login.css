@@ -1,0 +1,115 @@
+@import url('https://fonts.googleapis.com/css2?family=Inconsolata:wght@300&display=swap');
+
+*{
+    padding: 0;
+    margin: 0;
+}
+
+body{
+    background-color: #F4F9FC;
+}
+
+.introtxt{
+    width: 30%;
+    height: auto;
+    padding: 13% 15%;
+}
+
+.introtxt p, h1, h2{
+    padding-left: 0;
+    padding-bottom: 10px;
+    letter-spacing: 1.2px;
+    font-family: 'Inconsolata', monospace;
+}
+
+.introtxt h1{
+    color: #1a8fd9;
+    font-size: 90px;
+}
+
+.LG-01{
+    background-color: #fff;
+    width : 396px;
+    height: auto;
+    position: absolute;
+    top: 50%;
+    left: 72%;
+    transform: translate(-50%, -50%);
+    box-sizing: border-box;
+    border-radius: 5px;
+    box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.2), 0px 8px 16px rgba(0, 0, 0, 0.2);
+    text-align: center;
+    justify-content: center;
+    align-items: center;
+    margin: 0 0 40px;
+    padding: 24px 0 28px;
+}
+
+.LG-01 h2{
+    font-family: 'Inconsolata', monospace;
+    padding: 0;
+}
+
+form{
+    align-items: center;
+    display: flex;
+    flex-direction: column;
+}
+
+form input{
+    margin-top: 20px;
+    border-radius: 5px;
+}
+
+form input[type=text]{
+    font-size: 18px;
+    padding: 10px;
+    width: 350px;
+    font-family: 'Inconsolata', monospace;
+    border: 1px solid #dedee1;
+    -webkit-transition: 0.5ms;
+    transition: 0.5ms;
+    outline: none;
+}
+
+textarea:focus, [type=text]:focus{
+    outline: 1px solid #2e90cc;
+    outline-style: auto;
+}
+
+form input[type=password]{
+    font-size: 18px;
+    padding: 10px;
+    width: 350px;
+    border: 1px solid #dedee1;
+    -webkit-transition: 0.5ms;
+    transition: 0.5ms;
+}
+
+textarea:focus, input[type=password]:focus{
+    outline: 1px solid #2e90cc;
+    outline-style: auto;
+}
+
+form input[type=button]{
+    font-size: 18px;
+    width: 374px;
+    padding: 10px;
+    cursor: pointer;
+    border: 1px solid #dedee1;
+    font-family: 'Inconsolata', monospace;
+    background-color: #2d94d3;
+    color: #fff;
+    font-weight: 700;
+}
+
+form ::placeholder{
+    color: #dedee1;
+    font-family: 'Inconsolata', monospace;
+}
+
+form input :hover{
+    outline: none;
+}
+
+
