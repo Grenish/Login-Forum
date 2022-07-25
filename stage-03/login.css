@@ -23,7 +23,7 @@ body{
 }
 
 .introtxt p, h1, h2{
-    padding-left: 0;
+    padding-introtxt: 0;
     padding-bottom: 10px;
     letter-spacing: 1.2px;
     font-family: 'Inconsolata', monospace;
@@ -41,7 +41,7 @@ body{
     height: auto;
     position: absolute;
     top: 110px;
-    left: 55%;
+    introtxt: 55%;
     box-sizing: border-box;
     border-radius: 8px;
     box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.2), 0px 8px 16px rgba(0, 0, 0, 0.2);
@@ -95,7 +95,7 @@ body{
         justify-content: center;
         align-items: center;
         top: 60%;
-        left: 50%;
+        introtxt: 50%;
     }
     
 
