@@ -6,7 +6,7 @@
 }
 
 body{
-    background-color: #F4F9FC;
+    background-color: #f0f2f5;
 }
 
 .introtxt{
@@ -30,21 +30,65 @@ body{
 
 .LG-01{
     background-color: #fff;
-    width : 396px;
+    width : 413px;
     height: auto;
     position: absolute;
     top: 50%;
     left: 72%;
     transform: translate(-50%, -50%);
     box-sizing: border-box;
-    border-radius: 5px;
+    border-radius: 8px;
     box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.2), 0px 8px 16px rgba(0, 0, 0, 0.2);
     text-align: center;
     justify-content: center;
     align-items: center;
-    margin: 0 0 40px;
+    margin: 0;
     padding: 24px 0 28px;
 }
+
+@media only screen and (max-width:900px){
+
+    #envm{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+
+    #intro{
+        text-align: center;
+        width: 100px;
+        padding: 0;
+        margin: 20p;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        position: absolute;
+    }
+
+    #intro h1{
+        text-align: center;
+        padding: 0;
+        position: relative;
+
+    }
+
+    #intro h2, p{
+        display: none;
+    }
+
+
+    /*@media query for the login form (max-width:900px)*/
+
+    #LG-00{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+
+}
+
 
 .LG-01 h2{
     font-family: 'Inconsolata', monospace;
@@ -59,12 +103,12 @@ form{
 
 form input{
     margin-top: 20px;
-    border-radius: 5px;
+    border-radius: 8px;
 }
 
 form input[type=text]{
     font-size: 18px;
-    padding: 10px;
+    padding: 14px;
     width: 350px;
     font-family: 'Inconsolata', monospace;
     border: 1px solid #dedee1;
@@ -73,29 +117,32 @@ form input[type=text]{
     outline: none;
 }
 
+/*Smooth outline on action*/
 textarea:focus, [type=text]:focus{
-    outline: 1px solid #2e90cc;
-    outline-style: auto;
+    outline:1px solid #2e90cc;
+    box-shadow: 0 0 3px 2px #4ca1d5d6;
+    outline-style: none;
 }
 
 form input[type=password]{
     font-size: 18px;
-    padding: 10px;
+    padding: 14px;
     width: 350px;
     border: 1px solid #dedee1;
     -webkit-transition: 0.5ms;
     transition: 0.5ms;
 }
-
+/*smooth shadow on action*/
 textarea:focus, input[type=password]:focus{
     outline: 1px solid #2e90cc;
-    outline-style: auto;
+    box-shadow: 0 0 3px 2px #4ca1d5d6;
+    outline-style: none;
 }
 
 form input[type=button]{
-    font-size: 18px;
-    width: 374px;
-    padding: 10px;
+    font-size: 20px;
+    width: 376px;
+    padding: 14px;
     cursor: pointer;
     border: 1px solid #dedee1;
     font-family: 'Inconsolata', monospace;
@@ -145,9 +192,9 @@ a{
 }
 
 .newac input[type=button]{
-    width: 250px;
+    width: 210px;
     padding: 10px;
-    border-radius: 5px;
+    border-radius: 8px;
     cursor: pointer;
     border: 1px solid #dedee1;
     font-family: 'Inconsolata', monospace;
@@ -161,3 +208,4 @@ a{
 .newac input[type=button] :focus{
     outline: none;
 }
+
