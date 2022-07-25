@@ -25,6 +25,7 @@ body{
 .introtxt h1{
     color: #1a8fd9;
     font-size: 90px;
+    font-weight: 900;
 }
 
 .LG-01{
@@ -103,8 +104,12 @@ form input[type=button]{
     font-weight: 700;
 }
 
+input[type=button]:focus{
+    outline: none;
+}
+
 form ::placeholder{
-    color: #dedee1;
+    color: #a9a9ac;
     font-family: 'Inconsolata', monospace;
 }
 
@@ -112,4 +117,47 @@ form input :hover{
     outline: none;
 }
 
+a{
+    text-decoration: none;
+}
 
+.fpw{
+    padding: 0;
+    margin-top: 20px;
+}
+
+.hrd{
+    padding: 0;
+    margin-top: 20px;
+    align-items: center;
+    display: flex;
+    justify-content: center;
+}
+
+.hrd hr{
+    width: 374px;
+    border: 1px solid #e7e7e7;
+}
+
+.newac{
+    padding: 0;
+    margin-top: 20px;
+}
+
+.newac input[type=button]{
+    width: 250px;
+    padding: 10px;
+    border-radius: 5px;
+    cursor: pointer;
+    border: 1px solid #dedee1;
+    font-family: 'Inconsolata', monospace;
+    background-color: #36a420;
+    color: #fff;
+    font-weight: 700;
+    font-size: 18px;
+    
+}
+
+.newac input[type=button] :focus{
+    outline: none;
+}
