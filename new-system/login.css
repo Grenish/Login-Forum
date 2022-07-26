@@ -159,7 +159,7 @@ textarea:focus, input:focus{
 
 
 /*@media query for the adjustment of the page according to the size ratio of the screen*/
-
+/*Desktop*/
 @media only screen and (max-width:950px) {
     .envm{
         flex-direction: column;
