@@ -1,0 +1,304 @@
+@import url('https://fonts.googleapis.com/css2?family=Inconsolata:wght@300&display=swap');
+
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: 100vh;
+    background-color: #F0F2F5;
+}
+
+.envm{
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.introtxt, .LG-01, form{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.introtxt{
+    width: 500px;
+    align-items: flex-start;
+}
+
+.introtxt h1{
+    font-family: 'Inconsolata', monospace;
+    font-size: 85px;
+    color: #1877F2;
+    font-weight: 900;
+}
+
+.introtxt h1 span{
+    background: #1a8fd9;
+    color: #fff;
+}
+
+.introtxt h2{
+    padding-top: 10px;
+    font-size: 30px;
+    letter-spacing: 1.2px;
+    line-height: 30px;
+    font-family: 'Inconsolata', monospace;
+}
+
+.introtxt p{
+    padding-top: 10px;
+    font-size: 20px;
+    letter-spacing: 1.2px;
+    font-family: 'Inconsolata', monospace;
+    height: 150px;
+}
+
+.LG-01{
+    width: 400px;
+}
+
+form{
+    background-color: #fff;
+    border-radius: 8px;
+    width: 400px;
+    display: flex;
+    padding: 20px;
+    margin-bottom: 25px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2), 0px 6px 20px rgba(0, 0, 0, 0.19);
+}
+
+form h2{
+    margin-bottom: 10px;
+    font-family: 'Inconsolata', monospace;
+    font-weight: 900;
+}
+
+form input{
+    width: 100%;
+    padding: 15px;
+    margin-bottom: 15px;
+    border-radius: 8px;
+    border: 1px solid #DDDFE2;
+    font-size: 15px;
+    font-family: 'Inconsolata', monospace;
+    -webkit-transition: 0.5ms;
+    transition: 0.5ms;
+    outline: none;
+}
+
+/*Smooth coloured outline*/
+textarea:focus, input:focus{
+    outline:1px solid #2e90cc;
+    box-shadow: 0 0 3px 2px #4ca1d5d6;
+    outline-style: none;
+}
+
+.LGbtn{
+    background-color: #1877F2;
+    padding: 15px;
+    text-align: center;
+    text-decoration: none;
+    width: 100%;
+    border-radius: 8px;
+    font-size: 20px;
+    font-family: 'Inconsolata', monospace;
+    color: #fff;
+    font-weight: 900;
+}
+
+.LGbtn:hover{
+    background-color: #1669d6;
+}
+
+.FPbtn{
+    margin: 15px 0;
+    text-decoration: none;
+    color: #3387F4;
+    font-family: 'Inconsolata', monospace;
+    font-size: 15px;
+    font-weight: 500;
+}
+
+.FPbtn:hover{
+    text-decoration: underline;
+}
+
+.SGup{
+    padding-top: 20px;
+    border-top: 1px solid #DDDFE2;
+    display: flex;
+    justify-content: center;
+    width: 100%;
+}
+
+.SGbtn{
+    background-color: #42B72A;
+    padding: 15px;
+    text-align: center;
+    text-decoration: none;
+    border-radius: 8px;
+    color: #fff;
+    font-size: 17px;
+    font-family: 'Inconsolata', monospace;
+    font-weight: 600;
+}
+
+.SGbtn:hover{
+    background-color: #349820;
+}
+
+
+/*@media query for the adjustment of the page according to the size ratio of the screen*/
+
+/*Desktop*/
+@media only screen and (max-width:950px) {
+    .envm{
+        flex-direction: column;
+    }
+
+    .introtxt{
+        width: 400px;
+        align-content: center;
+        align-items: center;
+        text-align: center;
+    }
+
+    .introtxt h2{
+        font-size: 20px;
+        height: 75px;
+    }
+
+    .introtxt p{
+        display: none;
+    }   
+}
+
+
+.envm01{
+    display: none;
+}
+
+@media screen and (max-width:480px){
+    .envm{
+        display: none;
+    }
+    
+    html{
+        overflow-x: hidden;
+    }
+
+    body{
+        background-color: #fff;
+        padding: 0;
+        margin: 0;
+        box-sizing: border-box;
+        overflow-x: hidden;
+        width: auto;
+    }
+
+    .envm01{
+        display: flex;
+        flex-direction: column;
+        flex-wrap: wrap;
+        background-color: #fff;
+    }
+
+    .introtext01{
+        width: 100%;
+        align-items: center;    
+    }
+
+    .introtxt01 h1{
+        font-family: 'Inconsolata', monospace;
+        font-size: 85px;
+        color: #1877F2;
+        font-weight: 900;
+        text-align: center;
+        margin-bottom: 20px;
+    }
+    
+    .introtxt01 h1 span{
+        background: #1a8fd9;
+        color: #fff;
+    }
+
+    .LG02{
+        width: 100%;
+        background-color: #fff;
+    }
+
+    .LG02 form{
+        box-shadow: none;
+    }
+
+    .LG02 form input{
+        border-radius: 8px;
+        padding: 10px;
+        width: 300px;
+        background-color: #F5F6F7;
+    }
+
+    .LGbtn2{
+    background-color: #1877F2;
+    padding: 10px;
+    text-align: center;
+    text-decoration: none;
+    width: 300px;
+    border-radius: 8px;
+    font-size: 20px;
+    font-family: 'Inconsolata', monospace;
+    color: #fff;
+    font-weight: 900;
+    margin-bottom: 10px;
+    }
+
+    .FPbtn2{
+        text-decoration: none;
+        color: #1877F2;
+        margin-bottom: 10px;
+    }
+
+    form p{
+        display: inline-block;
+        border-bottom: 1px solid #bcbec1;
+        line-height: 0.2em;
+        width: 300px;
+        text-align: center;
+        margin: 10px 0 20px;
+        display: inline-block;
+        position: relative;
+    }
+
+    p span{
+        background-color: #fff;
+        padding:0 10px;
+    }
+
+    .SGup2{
+    display: flex;
+    justify-content: center;
+    width: 100%;
+    }
+
+    .SGbtn2{
+        background-color: #42B72A;
+        text-decoration: none;
+        width: 200px;
+        text-align: center;
+        padding: 10px;
+        color: #fff;
+        font-weight: 300;
+        border-radius: 8px;
+    }
+}
